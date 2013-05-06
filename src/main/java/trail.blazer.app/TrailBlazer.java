@@ -20,4 +20,9 @@ public class TrailBlazer implements Iterable<String>, Serializable {
     public boolean isEmpty() {
         return theTrail.isEmpty();
     }
+
+    @Override
+    public String toString() {
+        return theTrail.toString();
+    }
 }
