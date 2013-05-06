@@ -5,13 +5,14 @@ A test web app that persists the user trail in a trail blazer and displays a bre
 
 Spring MVC, trail brazer state on Http Session, session handling is annotation driven - @SessionAttribute
 
-<pre>
+```xml
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>annotated-session-attribute</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-</pre> from https://repository-robusta.forge.cloudbees.com/snapshot/ (public repository)
+```
+from https://repository-robusta.forge.cloudbees.com/snapshot/ (public repository)
 
 In the application context
 ```xml
