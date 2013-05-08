@@ -25,4 +25,8 @@ public class TrailBlazer implements Iterable<String>, Serializable {
     public String toString() {
         return theTrail.toString();
     }
+
+    public void empty() {
+        this.theTrail.clear();
+    }
 }

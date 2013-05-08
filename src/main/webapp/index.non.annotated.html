@@ -1,20 +1,20 @@
 <html>
 <head>
-    <title>A sample app - trail blazer - using @SessionAttribute</title>
+    <title>A sample app - trail blazer - using HttpSession</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript">
-        var trailBlazeEndPoint = "trailBlaze.html";
-        var trailBlazeResetEndPoint = "trailBlaze/reset.html";
+        var trailBlazeEndPoint = "trailBlaze/non/annotated.html";
+        var trailBlazeResetEndPoint = "trailBlaze/non/annotated/reset.html";
         $(function() {
             $("#theTilesComesInHere").load("tiles.html");
         });
     </script>
 </head>
 <body>
-<a href="index.non.annotated.html">A non annotated, http session handling sample</a>
+<a href="index.html">A @SessionAttributes annotated sample</a>
 <a style="margin-left: 10px" href="index.session.attributes.html">A @SessionAttributes (from framework) annotated, backed by ModelMap and @ModelAttribute sample</a>
 <div id="theTrailComesInHere" style="width:1200px; height:50px; overflow: auto;">&nbsp;</div>
 <div style="width: 600px; float: left" id="theTilesComesInHere"></div>
-<div style="width: 800px; padding-left:10px; overflow: auto;"><script src="https://gist.github.com/robusta-inc/5539452.js"></script></div>
+<div style="width: 600px; padding-left:10px; overflow: auto;"><script src="https://gist.github.com/robusta-inc/5539400.js"></script></div>
 </body>
 </html>

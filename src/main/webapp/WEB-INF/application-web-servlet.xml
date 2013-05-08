@@ -9,7 +9,10 @@
         </mvc:argument-resolvers>
     </mvc:annotation-driven>
     <context:component-scan base-package="trail.blazer.app"/>
+    <mvc:resources mapping="/tiles.html" location="/tiles.html"/>
     <mvc:resources mapping="/index.html" location="/index.html"/>
+    <mvc:resources mapping="/index.non.annotated.html" location="/index.non.annotated.html"/>
+    <mvc:resources mapping="/index.session.attributes.html" location="/index.session.attributes.html"/>
     <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/WEB-INF/"/>

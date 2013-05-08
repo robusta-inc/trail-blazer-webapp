@@ -1,0 +1,46 @@
+<style type="text/css">
+    #theTilesTable td {
+        width: 200px;
+        height: 200px;
+        background: aqua;
+        text-align: center;
+        font-family: Helvetica, serif;
+        font-weight: bold;
+        font-size: 90px;
+    }
+</style>
+<script type="text/javascript">
+    $(function() {
+        $("#theTilesTable td a").click(function() {
+            console.log($(this).text());
+            $("#theTrailComesInHere").load(trailBlazeEndPoint, {
+                "addTrail": $(this).text()
+            });
+            return false;
+        });
+        $("#reset").click(function() {
+            $("#theTrailComesInHere").load(trailBlazeResetEndPoint, {});
+            return false;
+        })
+    });
+</script>
+<span><a id="reset" href="#">Reset</a></span>
+<div style="margin-top: 10px;">
+    <table id="theTilesTable" cellpadding="2" cellspacing="2" border="0">
+        <tr>
+            <td><a href="#">1</a></td>
+            <td><a href="#">2</a></td>
+            <td><a href="#">3</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">4</a></td>
+            <td><a href="#">5</a></td>
+            <td><a href="#">6</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">7</a></td>
+            <td><a href="#">8</a></td>
+            <td><a href="#">9</a></td>
+        </tr>
+    </table>
+</div>
